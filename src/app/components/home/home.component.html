@@ -1,0 +1,95 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>HOME</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table>
+        <tr>
+          <th>OPERATOR</th>
+          <th>DESCRIPTION</th>
+        </tr>
+        <tr>
+          <th>map</th>
+          <td>Observable operator that allows you to transform data in the Observable chain</td>
+        </tr>
+        <tr>
+          <th>tap</th>
+          <td>allows us to perform some action without changing the response. It does not stop, block or change Observable chain.
+            It just runs some code with the data (response) you get back from the Observable -- allows us to execute some code here in place without
+            altering the data that is thuneled throug the Observable</td>
+        </tr>
+        <tr>
+          <th>take</th>
+          <td>Emits only the first count values (selected number) emitted by the source Observable</td>
+        </tr>
+        <tr>
+          <th>filter</th>
+          <td>Filter items emitted by the source Observable by only emitting those that satisfy a specified predicate.</td>
+        </tr>
+        <tr>
+          <th>of</th>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th>from</th>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th>fromEvent</th>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th>combineLatest</th>
+          <td>To combine the streams</td>
+        </tr>
+        <tr>
+          <th>shareReplay</th>
+          <td>It makes only 1 call to the back-end & shares response to the different APIs that are subscribed to it</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <button id="execute" class="btn btn-primary" type="button" (click)="execute()">Execute</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- https://rxjs.dev/api/index/function/filter -->
+<!-- https://www.youtube.com/watch?v=2T3F5TfrYwI&ab_channel=MonsterlessonsAcademy -->
+
+
+<style>
+  .container {
+    margin: 1em auto;
+  }
+
+  table, tr, th, td {
+    border: 1px solid gray;
+  }
+
+  th {
+    background-color: #f3f3f3;
+    opacity: 10;
+  }
+
+  th, td {
+    padding: 0.5em;
+    text-align: center;
+  }
+
+  #execute {
+    margin-top: 1em;
+  }
+</style>

@@ -1,0 +1,21 @@
+<h2>BEHAVIOUR SUBJECT</h2>
+<p>check console logs</p>
+
+<!-- check out this service !!! -->
+<div class="spinner-container">
+  <section *ngIf="!(isLoading$ | async); else loading">
+    <button class="btn btn-spinner" (click)="testSpinner()" [disabled]="isDisabled">SPIN</button>
+  </section>
+  <ng-template #loading>
+    <p>L O A D I N G ...</p>
+    <div class="loader"></div>
+  </ng-template>
+</div>
+
+<div class="container" *ngIf="users">
+  <div *ngFor="let user of users">
+    <h4>{{ user.name }}</h4>
+  </div>
+
+  <button class="btn btn-clear" (click)="clearUsers()">CLEAR</button>
+</div>

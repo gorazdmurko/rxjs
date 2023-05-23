@@ -1,0 +1,22 @@
+<h2>SUBJECTS</h2>
+
+
+<!-- check out this service !!! -->
+<div class="spinner-container">
+  <section *ngIf="!(isLoading$ | async); else loading">
+    <button class="btn btn-spinner" (click)="fetchUsers()" [disabled]="isDisabled">FETCH USERS</button>
+  </section>
+  <ng-template #loading>
+    <p>L O A D I N G ...</p>
+    <div class="loader"></div>
+  </ng-template>
+</div>
+
+<div class="container" *ngIf="userSubject$ | async as users">
+  <div *ngFor="let user of users">
+    <h4>{{ user.name }}</h4>
+  </div>
+
+  <button class="btn btn-clear" (click)="clearUsers()">CLEAR LIST</button>
+</div>
+

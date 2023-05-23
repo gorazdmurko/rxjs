@@ -1,0 +1,43 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">RxJs Tutorial</a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="/mergeMap">Merge Map</a></li>
+        <li routerLinkActive="active"><a routerLink="/switchMap">Switch Map</a></li>
+        <li routerLinkActive="active"><a routerLink="/concatMap">Concat Map</a></li>
+        <li routerLinkActive="active"><a routerLink="/exhaustMap">Exhaust Map</a></li>
+        <li routerLinkActive="active"><a routerLink="/flatMap">Flat Map</a></li>
+        <li routerLinkActive="active"><a routerLink="/shareReplay">shareReplay</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDropdown>
+          <a style="cursor: pointer;" class="dropdown-toggle" role="button">Observables<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li routerLinkActive="active"><a routerLink="/observable">Observable</a></li>
+            <li routerLinkActive="active"><a routerLink="/promiseVsObservable">Promise vs. Observable</a></li>
+            <li routerLinkActive="active"><a routerLink="/subjects">Subject</a></li>
+            <li routerLinkActive="active"><a routerLink="/behaviourSubject">BehaviourSubject</a></li>
+            <li routerLinkActive="active"><a routerLink="/asyncSubject">AsyncSubject</a></li>
+            <li routerLinkActive="active"><a routerLink="/replaySubject">ReplaySubject</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+
+<!-- https://www.youtube.com/watch?v=2zJRw3Cl_Vs&ab_channel=MonsterlessonsAcademy -->

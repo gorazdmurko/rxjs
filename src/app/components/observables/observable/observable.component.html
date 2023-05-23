@@ -1,0 +1,6 @@
+
+<div *ngFor="let country of observable$ | async">
+  <h4>{{ country.name.common }}, {{ country.subregion }}</h4>
+  <p>{{ country | json }}</p>
+  <img src="{{ country.flags.png }}" />
+</div>
